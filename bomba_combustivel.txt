@@ -1,0 +1,23 @@
+@startuml
+class Bomba {
+    - totalLitros : double
+    - valorLitro : float
+    + abastecerPorLitro(litros : int) : boolean
+    + abastecerPorValor(valor : double) : boolean
+}
+
+class BombaGasolina {
+}
+
+class BombaEtanol {
+}
+
+class BombaDiesel {
+}
+
+
+Bomba <|-- BombaGasolina
+Bomba <|-- BombaEtanol
+Bomba <|-- BombaDiesel
+
+@enduml

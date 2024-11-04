@@ -1,0 +1,28 @@
+@startuml
+class Ambiente {
+    - area : float
+}
+
+class Quarto {
+    - capacidade : int
+}
+
+class Sala {
+    - tv : boolean
+}
+
+class Banheiro {
+    - banheira : boolean
+}
+
+class Cozinha {
+    - microondas : boolean
+}
+
+
+Ambiente <|-- Quarto
+Ambiente <|-- Sala
+Ambiente <|-- Banheiro
+Ambiente <|-- Cozinha
+
+@enduml

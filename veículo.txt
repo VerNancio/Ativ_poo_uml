@@ -1,0 +1,23 @@
+@startuml
+abstract class Veiculo {
+    - motor : boolean
+}
+
+class Carro {
+    - portas : int
+}
+
+class Moto {
+    - cilindradas : int
+}
+
+class Caminhao {
+    - eixos : int
+}
+
+
+Veiculo <|-- Carro
+Veiculo <|-- Moto
+Veiculo <|-- Caminhao
+
+@enduml

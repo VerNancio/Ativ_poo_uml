@@ -1,0 +1,37 @@
+@startuml
+abstract class InstrumentoMusical {
+    - nome : String
+    - afinacao : String
+    + tocar()
+}
+
+class Cordas extends InstrumentoMusical {
+    - numeroCordas : int
+}
+class Metais extends InstrumentoMusical {
+   - material : String
+}
+class Madeiras extends InstrumentoMusical {
+    - tipoMadeira : String
+}
+class Percussao extends InstrumentoMusical {
+    - baquetas : boolean
+}
+
+
+
+Cordas <|-- Violao
+Cordas <|-- Piano
+
+Metais <|-- Trompete
+Metais <|-- Saxofone
+Metais <|-- Tuba
+
+
+Madeiras <|-- Fagote
+
+
+Percussao <|-- Tambor
+Percussao <|-- Prato
+
+@enduml

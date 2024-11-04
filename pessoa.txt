@@ -1,0 +1,20 @@
+@startuml
+class Pessoa {
+    - codigo : int
+    - nome : String
+    - endereco : String
+}
+
+class Aluno {
+    - matricula : int
+}
+
+class Professor {
+    - disciplina : String
+}
+
+
+Pessoa <|-- Aluno
+Pessoa <|-- Professor
+
+@enduml

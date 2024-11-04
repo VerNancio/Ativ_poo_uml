@@ -1,0 +1,13 @@
+@startuml
+class NaveEspacial {
+    - velocidadeMaxima : double
+}
+
+class Apolo11 extends NaveEspacial {
+    - tipoCombustivel : String
+}
+
+class MillenniumFalcon extends Apolo11 {
+    - classeHiperpropulsor : float
+}
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+class Peca {
+    - linha : int
+    - coluna : int
+    - cor : boolean
+    - movimentos : int
+}
+
+class Peao {
+    + mover(linha : int, coluna : int) : boolean
+}
+
+class Torre {
+    + mover(linha : int, coluna : int) : boolean
+}
+
+class Rei
+class Rainha
+class Cavalo
+class Bispo
+
+
+Peca <|-- Peao
+Peca <|-- Torre
+Peca <|-- Rei
+Peca <|-- Rainha
+Peca <|-- Cavalo
+Peca <|-- Bispo
+
+@enduml

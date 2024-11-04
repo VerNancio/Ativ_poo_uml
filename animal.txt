@@ -1,0 +1,41 @@
+@startuml
+abstract class Animal {
+    - nome : String
+    - idade : int
+    + comer()
+    + dormir()
+}
+
+class Mamifero extends Animal {
+    - pelos : boolean
+    + amamentar()
+}
+
+class Reptil extends Animal {
+    - escamas : boolean
+    + botarOvos()
+}
+
+class Gato extends Mamifero {
+    - vidas : int
+    + miar()
+}
+
+class Cao extends Mamifero {
+    - raca : String
+    + latir()
+}
+
+
+class Tartaruga extends Reptil {
+    - casco : boolean
+    + nadar()
+}
+
+class Lagarto extends Reptil {
+    - cauda : boolean
+    + rastejar()
+}
+
+
+@enduml
